@@ -21,7 +21,7 @@ const Weather = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       setWeatherData(response.data);
-      // Store the fetched data in localStorage from the api 
+      // Store the fetched data in localStorage from the api
       localStorage.setItem("lastWeatherData", JSON.stringify(response.data));
       setLoading(false);
       setCity("");
@@ -44,7 +44,6 @@ const Weather = () => {
 
   return (
     <div className="flex items-center justify-center p-4 sm:p-5">
-
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-lg">
         <div className="text-center mb-6">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
@@ -68,7 +67,7 @@ const Weather = () => {
             >
               Get Weather
             </button>
-             <button
+            <button
               type="button"
               onClick={loadLastWeather}
               className="bg-gray-500 px-6 py-3 rounded-lg text-white font-semibold shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out w-full"
@@ -110,8 +109,8 @@ const Weather = () => {
             </div>
             <div className="flex items-center justify-between flex-wrap bg-white p-3 rounded-lg mb-2">
               <p className="text-base sm:text-lg font-bold">Wind Speed:</p>
-            
-              <span className="text-base sm:text-lg font-semibold text-right"> 
+
+              <span className="text-base sm:text-lg font-semibold text-right">
                 ** {weatherData.wind.speed} m/s **
               </span>
             </div>
