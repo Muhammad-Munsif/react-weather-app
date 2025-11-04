@@ -46,7 +46,7 @@ const Weather = () => {
     <div className="flex items-center justify-center p-4 sm:p-5">
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-lg">
         <div className="text-center mb-6">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          <h1 className="text-3xl sm:text-3xl font-bold text-gray-800">
             Weather App Condition
           </h1>
         </div>
